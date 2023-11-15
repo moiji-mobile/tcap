@@ -16,14 +16,14 @@ BaselineOfTCAP >> baseline: spec [
 			repository: 'github://moiji-mobile/osmocom-core:v8/source'].
 	spec baseline: 'OsmoNetwork' with: [
 		spec
-			repository: 'github://moiji-mobile/osmocom-network:v8/source'].
+			repository: 'github://moiji-mobile/osmocom-network:v10/source'].
 	spec baseline: 'PetitParser' with: [
 		spec
 			repository: 'github://moosetechnology/PetitParser:v2.2.0/src';
 			loads: #( 'Core' ) ].
 	spec baseline: 'ASN1' with: [
 		spec
-			repository: 'github://zecke/asn.1:v0.9_z1';  "Temporarily for the equality handling of ASN1OctetStringValue"
+			repository: 'github://ranomine/ASN.1:master';
 			loads: #( 'default' ) ].
 	spec project: 'ASN1 Full' copyFrom: 'ASN1' with: [
 		spec loads: #( 'tests' )].
